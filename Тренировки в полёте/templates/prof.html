@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div align="center">
+    {% if 'инженер' in profession or 'строитель' in profession %}
+        <h3>Инженерные тренажеры</h3>
+        <img src='/../static/img/engine.jpg' alt="схема инженерных тренажеров" width="512" height="512">
+    {% else %}
+        <h3>Научные симуляторы</h3>
+        <img src='/../static/img/simulator.jpg' alt="схема научных симуляторов" width="512" height="512">
+    {% endif %}
+
+</div>
+{% endblock %}
